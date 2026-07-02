@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18294159749"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18294159749');
+</script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TPSBS9FW');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reddy – Fast & Reliable Delivery Service</title>
+  <meta name="description" content="Reddy delivers anything, anywhere — same-day delivery, logistics, courier services and more. Get your first delivery FREE." />
+  <meta name="keywords" content="delivery service, same day delivery, courier, logistics, fast delivery, Reddy delivery" />
+  <meta property="og:title" content="Reddy – Fast & Reliable Delivery" />
+  <meta property="og:description" content="Same-day delivery, courier & logistics — fast, reliable, Reddy." />
+  <meta property="og:type" content="website" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lime:    { neon: '#9DFF20', dark: '#345C00', mid: '#6abf0e' },
+            ink:     { DEFAULT: '#0D0D0D', 2: '#141414', 3: '#1A1A1A', 4: '#242424', border: '#2a2a2a' },
+          },
+          fontFamily: {
+            sans:    ['"DM Sans"', 'sans-serif'],
+            display: ['"Inter"', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: #0D0D0D; }
+    ::-webkit-scrollbar-thumb { background: #9DFF20; border-radius: 4px; }
+
+    /* ── Selection ── */
+    ::selection { background: #9DFF20; color: #0D0D0D; }
+
+    /* ── Cursor flash on lime ── */
+    .lime-cursor { caret-color: #9DFF20; }
+
+    /* ── Marquee ── */
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .marquee-track { animation: marquee 28s linear infinite; }
+    .marquee-track:hover { animation-play-state: paused; }
+
+    /* ── Float card ── */
+    @keyframes cardFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+    .float-card { animation: cardFloat 5s ease-in-out infinite; }
+
+    /* ── Shine sweep on button ── */
+    @keyframes shine {
+      0%   { left: -100%; }
+      60%,100% { left: 130%; }
+    }
+    .btn-shine { position: relative; overflow: hidden; }
+    .btn-shine::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 60%; height: 100%;
+      background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.25) 50%, transparent 100%);
+      animation: shine 3s ease-in-out infinite;
+    }
+
+    /* ── Pulse ring ── */
+    @keyframes pulseRing {
+      0%   { transform: scale(1);   opacity: 0.6; }
+      100% { transform: scale(2.2); opacity: 0; }
+    }
+    .pulse-ring::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 9999px;
+      background: #9DFF20;
+      animation: pulseRing 1.8s ease-out infinite;
+    }
+
+    /* ── Reveal on scroll ── */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── Service card hover ── */
+    .svc-card {
+      border: 1px solid #2a2a2a;
+      transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    }
+    .svc-card:hover {
+      border-color: #9DFF20;
+      box-shadow: 0 0 30px rgba(157,255,32,0.12);
+      transform: translateY(-6px);
+    }
+
+    /* ── Number highlight ── */
+    .big-num { font-variant-numeric: tabular-nums; }
+
+    /* ── Popup slide ── */
+    @keyframes slideUp { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    .popup-slide { animation: slideUp 0.45s cubic-bezier(0.16,1,0.3,1) forwards; }
+
+    /* ── Input ── */
+    .inp {
+      background: #1A1A1A;
+      border: 1px solid #2a2a2a;
+      color: #fff;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .inp:focus {
+      outline: none;
+      border-color: #9DFF20;
+      box-shadow: 0 0 0 3px rgba(157,255,32,0.15);
+    }
+    .inp::placeholder { color: #555; }
+
+    /* ── WhatsApp float ── */
+    @keyframes waBounce { 0%,100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-8px) scale(1.05); } }
+    .wa-float { animation: waBounce 2.5s ease-in-out infinite; box-shadow: 0 8px 30px rgba(37,211,102,0.55); }
+
+    /* ── Step connector line ── */
+    .step-line::after {
+      content: '';
+      position: absolute;
+      top: 50%; left: 100%;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, #9DFF20 0%, transparent 100%);
+    }
+
+    select option { background: #1A1A1A; color: #fff; }
+
+    /* ── Tag pill ── */
+    .tag { background: rgba(157,255,32,0.08); border: 1px solid rgba(157,255,32,0.2); color: #9DFF20; }
+  </style>
+</head>
+
+<body class="bg-[#0D0D0D] text-white font-sans antialiased overflow-x-hidden">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPSBS9FW"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
+  <!-- ██████████  NAVBAR  ██████████ -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-[#0D0D0D]/90 backdrop-blur-xl border-b border-[#1f1f1f] transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="#" id="nav-logo" class="flex items-center gap-2 group">
+        <div class="relative w-9 h-9">
+          <span class="pulse-ring absolute inset-0 rounded-full"></span>
+          <div class="relative w-9 h-9 rounded-full bg-[#9DFF20] flex items-center justify-center shadow-lg shadow-[#9DFF20]/30">
+            <i class="fa-solid fa-bolt text-[#0D0D0D] text-base"></i>
+          </div>
+        </div>
+        <span class="font-display font-black text-2xl tracking-tight text-white group-hover:text-[#9DFF20] transition-colors">Reddy<span class="text-[#9DFF20]">.</span></span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-8" aria-label="Primary navigation">
+        <a href="#services"     id="nav-services"     class="text-[#888] hover:text-white text-sm font-medium transition-colors tracking-wide">Services</a>
+        <a href="#how-it-works" id="nav-how"          class="text-[#888] hover:text-white text-sm font-medium transition-colors tracking-wide">How It Works</a>
+        <a href="#pricing"      id="nav-pricing"      class="text-[#888] hover:text-white text-sm font-medium transition-colors tracking-wide">Pricing</a>
+        <a href="#contact"      id="nav-contact"      class="text-[#888] hover:text-white text-sm font-medium transition-colors tracking-wide">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+         <a href="https://wa.link/dljvvh"
+           target="_blank" rel="noopener" id="nav-wa"
+           class="hidden sm:flex items-center gap-2 text-sm font-semibold text-[#0D0D0D] bg-[#25D366] hover:bg-[#1ebe5d] px-4 py-2 rounded-full transition-all hover:scale-105 hover:shadow-lg hover:shadow-green-500/30">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://wa.link/dljvvh" id="nav-cta"
+           class="btn-shine text-sm font-bold text-[#0D0D0D] bg-[#9DFF20] hover:bg-[#b5ff52] px-5 py-2 rounded-full transition-all hover:scale-105 hover:shadow-lg hover:shadow-[#9DFF20]/30">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ██████████  HERO  ██████████ -->
+  <section id="hero" class="min-h-screen flex items-center relative overflow-hidden pt-16 bg-[#0D0D0D]">
+
+    <!-- Background elements -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-[#9DFF20]/8 rounded-full blur-[120px] translate-x-1/3 -translate-y-1/3"></div>
+      <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#9DFF20]/5 rounded-full blur-[80px] -translate-x-1/4 translate-y-1/4"></div>
+      <!-- Grid lines -->
+      <svg class="absolute inset-0 w-full h-full opacity-[0.04]" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+            <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#9DFF20" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)" />
+      </svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-20 w-full relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+        <!-- LEFT -->
+        <div>
+          <div class="inline-flex items-center gap-2 border border-[#9DFF20]/30 bg-[#9DFF20]/5 text-[#9DFF20] text-xs font-semibold px-4 py-2 rounded-full mb-7 tracking-widest uppercase">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#9DFF20] animate-pulse"></span>
+            Same Day · On-Demand Delivery
+          </div>
+
+          <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.0] mb-6 tracking-tight">
+            Delivery<br/>
+            <span class="text-[#9DFF20]">Done Right.</span><br/>
+            <span class="text-[#444]">Every Time.</span>
+          </h1>
+
+          <p class="text-[#888] text-lg leading-relaxed mb-9 max-w-lg">
+            <span class="text-white font-semibold">Reddy</span> is your trusted delivery partner — food, parcels, documents, groceries — picked up and dropped off <span class="text-[#9DFF20] font-semibold">within hours</span>, not days.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 mb-10">
+            <a href="#contact" id="hero-cta"
+               class="btn-shine inline-flex items-center justify-center gap-2 bg-[#9DFF20] hover:bg-[#b5ff52] text-[#0D0D0D] font-black px-8 py-4 rounded-2xl text-base transition-all hover:scale-105 hover:shadow-xl hover:shadow-[#9DFF20]/25">
+              <i class="fa-solid fa-truck-fast"></i>
+              Book a Delivery — FREE First Order
+            </a>
+            <a href="https://wa.link/dljvvh"
+               target="_blank" rel="noopener" id="hero-wa"
+               class="inline-flex items-center justify-center gap-2 border border-[#2a2a2a] hover:border-[#9DFF20]/40 text-white font-bold px-8 py-4 rounded-2xl text-base transition-all hover:bg-[#9DFF20]/5">
+              <i class="fa-brands fa-whatsapp text-[#25D366] text-lg"></i>
+              Chat on WhatsApp
+            </a>
+          </div>
+
+          <!-- Trust row -->
+          <div class="flex flex-wrap items-center gap-6 text-sm">
+            <div class="flex items-center gap-2 text-[#666]">
+              <i class="fa-solid fa-shield-check text-[#9DFF20]"></i>
+              <span>Insured Delivery</span>
+            </div>
+            <div class="flex items-center gap-2 text-[#666]">
+              <i class="fa-solid fa-location-dot text-[#9DFF20]"></i>
+              <span>Live Tracking</span>
+            </div>
+            <div class="flex items-center gap-2 text-[#666]">
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <span class="text-yellow-400 font-bold">4.9</span> <span>/ 5 rating</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Floating card -->
+        <div class="hidden lg:flex flex-col items-center gap-6 relative">
+          <div class="float-card w-full max-w-xs bg-[#141414] border border-[#2a2a2a] rounded-3xl p-6 shadow-2xl">
+            <div class="flex items-center justify-between mb-5">
+              <span class="text-sm font-semibold text-white">Active Deliveries</span>
+              <span class="text-xs bg-[#9DFF20]/15 text-[#9DFF20] border border-[#9DFF20]/25 px-3 py-1 rounded-full animate-pulse">● Live</span>
+            </div>
+            <!-- Delivery items -->
+            <div class="space-y-4">
+              <div class="flex items-center gap-3 p-3 bg-[#1A1A1A] rounded-xl">
+                <div class="w-10 h-10 rounded-xl bg-[#9DFF20]/10 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-box text-[#9DFF20] text-sm"></i>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="text-sm font-semibold text-white truncate">Parcel #RD-2847</div>
+                  <div class="text-xs text-[#666] mt-0.5">Koramangala → Indiranagar</div>
+                </div>
+                <div class="shrink-0">
+                  <div class="text-xs text-[#9DFF20] font-bold">12 min</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 p-3 bg-[#1A1A1A] rounded-xl">
+                <div class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-utensils text-orange-400 text-sm"></i>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="text-sm font-semibold text-white truncate">Food Order #RD-2848</div>
+                  <div class="text-xs text-[#666] mt-0.5">HSR Layout → BTM Layout</div>
+                </div>
+                <div class="shrink-0">
+                  <div class="text-xs text-orange-400 font-bold">8 min</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 p-3 bg-[#1A1A1A] rounded-xl">
+                <div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-file text-blue-400 text-sm"></i>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="text-sm font-semibold text-white truncate">Documents #RD-2849</div>
+                  <div class="text-xs text-[#666] mt-0.5">MG Road → Whitefield</div>
+                </div>
+                <div class="shrink-0">
+                  <div class="text-xs text-blue-400 font-bold">22 min</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-[#2a2a2a] flex items-center justify-between">
+              <span class="text-xs text-[#555]">Deliveries today</span>
+              <span class="text-2xl font-black text-[#9DFF20] big-num">1,247</span>
+            </div>
+          </div>
+
+          <!-- Mini stat badges -->
+          <div class="flex gap-3 w-full max-w-xs">
+            <div class="flex-1 bg-[#141414] border border-[#2a2a2a] rounded-2xl p-4 text-center">
+              <div class="text-2xl font-black text-[#9DFF20]">98%</div>
+              <div class="text-xs text-[#555] mt-1">On-Time Rate</div>
+            </div>
+            <div class="flex-1 bg-[#141414] border border-[#2a2a2a] rounded-2xl p-4 text-center">
+              <div class="text-2xl font-black text-white">45 min</div>
+              <div class="text-xs text-[#555] mt-1">Avg Delivery</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ██████████  MARQUEE STRIP  ██████████ -->
+  <div class="bg-[#9DFF20] py-3 overflow-hidden border-y border-[#9DFF20]">
+    <div class="marquee-track flex items-center gap-0 whitespace-nowrap" style="width: max-content;">
+      <!-- Repeat twice for seamless loop -->
+      <template id="marquee-items">
+        <span class="inline-flex items-center gap-2 px-8 text-[#0D0D0D] text-sm font-black uppercase tracking-widest">
+          <i class="fa-solid fa-bolt"></i> Same Day Delivery
+        </span>
+        <span class="inline-flex items-center gap-2 px-8 text-[#0D0D0D] text-sm font-black uppercase tracking-widest">
+          <i class="fa-solid fa-location-dot"></i> Live Tracking
+        </span>
+        <span class="inline-flex items-center gap-2 px-8 text-[#0D0D0D] text-sm font-black uppercase tracking-widest">
+          <i class="fa-solid fa-shield-check"></i> Insured Parcels
+        </span>
+        <span class="inline-flex items-center gap-2 px-8 text-[#0D0D0D] text-sm font-black uppercase tracking-widest">
+          <i class="fa-solid fa-headset"></i> 24/7 Support
+        </span>
+        <span class="inline-flex items-center gap-2 px-8 text-[#0D0D0D] text-sm font-black uppercase tracking-widest">
+          <i class="fa-solid fa-star"></i> 4.9★ Rated
+        </span>
+        <span class="inline-flex items-center gap-2 px-8 text-[#0D0D0D] text-sm font-black uppercase tracking-widest">
+          <i class="fa-solid fa-truck-fast"></i> Express Delivery Available
+        </span>
+      </template>
+    </div>
+  </div>
+
+  <!-- ██████████  STATS  ██████████ -->
+  <section id="stats" class="py-20 border-b border-[#1f1f1f]">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="reveal text-center lg:text-left">
+          <div class="text-5xl sm:text-6xl font-black text-white big-num">50K<span class="text-[#9DFF20]">+</span></div>
+          <div class="text-[#555] text-sm mt-2 font-medium uppercase tracking-wider">Deliveries Made</div>
+        </div>
+        <div class="reveal text-center lg:text-left">
+          <div class="text-5xl sm:text-6xl font-black text-white big-num">10K<span class="text-[#9DFF20]">+</span></div>
+          <div class="text-[#555] text-sm mt-2 font-medium uppercase tracking-wider">Happy Customers</div>
+        </div>
+        <div class="reveal text-center lg:text-left">
+          <div class="text-5xl sm:text-6xl font-black text-white big-num">45<span class="text-[#9DFF20]">min</span></div>
+          <div class="text-[#555] text-sm mt-2 font-medium uppercase tracking-wider">Avg Delivery Time</div>
+        </div>
+        <div class="reveal text-center lg:text-left">
+          <div class="text-5xl sm:text-6xl font-black text-white big-num">98<span class="text-[#9DFF20]">%</span></div>
+          <div class="text-[#555] text-sm mt-2 font-medium uppercase tracking-wider">On-Time Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ██████████  SERVICES  ██████████ -->
+  <section id="services" class="py-24">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+      <div class="mb-16 reveal">
+        <div class="inline-flex items-center gap-2 tag text-xs font-bold px-4 py-2 rounded-full mb-5 tracking-widest uppercase">
+          <i class="fa-solid fa-layer-group text-xs"></i> What We Deliver
+        </div>
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+          <h2 class="font-display text-4xl sm:text-5xl font-black text-white leading-[1.1] max-w-lg">
+            One App.<br/><span class="text-[#9DFF20]">Every Delivery.</span>
+          </h2>
+          <p class="text-[#666] text-base max-w-sm leading-relaxed">
+            From a single parcel to bulk logistics — Reddy handles everything, end-to-end, with zero hassle.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+        <div class="svc-card reveal bg-[#141414] rounded-2xl p-7" id="svc-food">
+          <div class="w-12 h-12 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-utensils text-orange-400 text-lg"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Food Delivery</h3>
+          <p class="text-[#666] text-sm leading-relaxed mb-5">Hot food from your favourite restaurants delivered to your door in under 45 minutes — fresh, warm, on time.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag text-xs px-3 py-1 rounded-full">Restaurants</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Cloud Kitchens</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Bulk Orders</span>
+          </div>
+        </div>
+
+        <div class="svc-card reveal bg-[#141414] rounded-2xl p-7" id="svc-parcel">
+          <div class="w-12 h-12 rounded-xl bg-[#9DFF20]/10 border border-[#9DFF20]/20 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-box-open text-[#9DFF20] text-lg"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Parcel & Courier</h3>
+          <p class="text-[#666] text-sm leading-relaxed mb-5">Send packages across the city same-day. All sizes accepted. Insurance available. Real-time tracking included for every shipment.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag text-xs px-3 py-1 rounded-full">Same Day</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Scheduled</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Insured</span>
+          </div>
+        </div>
+
+        <div class="svc-card reveal bg-[#141414] rounded-2xl p-7" id="svc-grocery">
+          <div class="w-12 h-12 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-basket-shopping text-green-400 text-lg"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Grocery & Essentials</h3>
+          <p class="text-[#666] text-sm leading-relaxed mb-5">We pick up groceries, medicines, pet food and daily essentials from stores near you and deliver in under an hour.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag text-xs px-3 py-1 rounded-full">Supermarkets</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Pharmacy</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Quick Delivery</span>
+          </div>
+        </div>
+
+        <div class="svc-card reveal bg-[#141414] rounded-2xl p-7" id="svc-docs">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-file-contract text-blue-400 text-lg"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Document Delivery</h3>
+          <p class="text-[#666] text-sm leading-relaxed mb-5">Contracts, legal papers, bank documents — handled with care, confidentiality and signature confirmation on delivery.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag text-xs px-3 py-1 rounded-full">Confidential</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Signed Receipt</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Priority</span>
+          </div>
+        </div>
+
+        <div class="svc-card reveal bg-[#141414] rounded-2xl p-7" id="svc-bulk">
+          <div class="w-12 h-12 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-warehouse text-violet-400 text-lg"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Business Logistics</h3>
+          <p class="text-[#666] text-sm leading-relaxed mb-5">Dedicated delivery fleet for e-commerce brands, retail stores and businesses. Bulk pickups, scheduled runs, monthly contracts.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag text-xs px-3 py-1 rounded-full">B2B</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Fleet Dedicated</span>
+            <span class="tag text-xs px-3 py-1 rounded-full">Monthly Plans</span>
+          </div>
+        </div>
+
+        <!-- CTA card -->
+        <div class="reveal bg-[#9DFF20] rounded-2xl p-7 flex flex-col justify-between" id="svc-cta">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-[#0D0D0D]/10 flex items-center justify-center mb-5">
+              <i class="fa-solid fa-truck-fast text-[#0D0D0D] text-xl"></i>
+            </div>
+            <h3 class="text-xl font-black text-[#0D0D0D] mb-3">Need a Custom Solution?</h3>
+            <p class="text-[#345C00] text-sm leading-relaxed">Talk to our team — we design delivery programmes for enterprises, events, hospitals and more.</p>
+          </div>
+          <a href="#contact" class="mt-6 inline-flex items-center gap-2 bg-[#0D0D0D] text-[#9DFF20] font-bold px-5 py-3 rounded-xl text-sm transition-all hover:bg-[#1a1a1a] hover:scale-105">
+            Talk to Us <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ██████████  HOW IT WORKS  ██████████ -->
+  <section id="how-it-works" class="py-24 bg-[#0A0A0A] border-y border-[#1f1f1f]">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+      <div class="text-center mb-16 reveal">
+        <div class="inline-flex items-center gap-2 tag text-xs font-bold px-4 py-2 rounded-full mb-5 tracking-widest uppercase">
+          <i class="fa-solid fa-circle-info text-xs"></i> How It Works
+        </div>
+        <h2 class="font-display text-4xl sm:text-5xl font-black text-white mb-4">
+          Order in <span class="text-[#9DFF20]">3 Steps</span>
+        </h2>
+        <p class="text-[#555] text-base max-w-xl mx-auto">No complicated forms, no hidden fees. Just fast, reliable delivery at your fingertips.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-3 gap-8 relative">
+
+        <div class="reveal text-center" id="step-1">
+          <div class="relative inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#9DFF20]/10 border border-[#9DFF20]/30 mb-6 mx-auto">
+            <span class="text-2xl font-black text-[#9DFF20]">01</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Book Your Delivery</h3>
+          <p class="text-[#555] text-sm leading-relaxed">Fill in the pickup &amp; drop-off details on our website or WhatsApp. Takes under 60 seconds.</p>
+        </div>
+
+        <div class="reveal text-center" id="step-2">
+          <div class="relative inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#9DFF20]/10 border border-[#9DFF20]/30 mb-6 mx-auto">
+            <span class="text-2xl font-black text-[#9DFF20]">02</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">We Pick It Up</h3>
+          <p class="text-[#555] text-sm leading-relaxed">A verified Reddy rider reaches your location in under 20 minutes. Track them live on your phone.</p>
+        </div>
+
+        <div class="reveal text-center" id="step-3">
+          <div class="relative inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#9DFF20]/10 border border-[#9DFF20]/30 mb-6 mx-auto">
+            <span class="text-2xl font-black text-[#9DFF20]">03</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Delivered &amp; Confirmed</h3>
+          <p class="text-[#555] text-sm leading-relaxed">Your package is delivered on time. You get a photo confirmation &amp; delivery receipt instantly.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ██████████  PRICING  ██████████ -->
+  <section id="pricing" class="py-24">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+      <div class="text-center mb-16 reveal">
+        <div class="inline-flex items-center gap-2 tag text-xs font-bold px-4 py-2 rounded-full mb-5 tracking-widest uppercase">
+          <i class="fa-solid fa-tag text-xs"></i> Pricing
+        </div>
+        <h2 class="font-display text-4xl sm:text-5xl font-black text-white mb-4">
+          Simple, <span class="text-[#9DFF20]">Transparent Pricing</span>
+        </h2>
+        <p class="text-[#555] text-base max-w-xl mx-auto">No hidden charges. Pay only for what you use. First delivery is always FREE.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-3 gap-6">
+
+        <!-- Starter -->
+        <div class="reveal border border-[#2a2a2a] hover:border-[#9DFF20]/40 bg-[#141414] rounded-3xl p-8 transition-all hover:shadow-lg hover:shadow-[#9DFF20]/10 hover:-translate-y-1" id="plan-starter">
+          <div class="text-xs font-bold text-[#555] uppercase tracking-widest mb-4">Starter</div>
+          <div class="text-5xl font-black text-white mb-1">&#8377;49<span class="text-xl text-[#555] font-normal">/delivery</span></div>
+          <div class="text-[#555] text-sm mb-6">Up to 5 km radius</div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-3 text-sm text-[#888]"><i class="fa-solid fa-check text-[#9DFF20] text-xs w-4"></i>Same city delivery</li>
+            <li class="flex items-center gap-3 text-sm text-[#888]"><i class="fa-solid fa-check text-[#9DFF20] text-xs w-4"></i>Live GPS tracking</li>
+            <li class="flex items-center gap-3 text-sm text-[#888]"><i class="fa-solid fa-check text-[#9DFF20] text-xs w-4"></i>WhatsApp updates</li>
+            <li class="flex items-center gap-3 text-sm text-[#888]"><i class="fa-solid fa-check text-[#9DFF20] text-xs w-4"></i>Photo confirmation</li>
+            <li class="flex items-center gap-3 text-sm text-[#555]"><i class="fa-solid fa-xmark text-[#444] text-xs w-4"></i>Priority support</li>
+            <li class="flex items-center gap-3 text-sm text-[#555]"><i class="fa-solid fa-xmark text-[#444] text-xs w-4"></i>Business dashboard</li>
+          </ul>
+          <a href="#contact" class="block text-center border border-[#9DFF20]/30 text-[#9DFF20] hover:bg-[#9DFF20]/10 font-bold py-3 rounded-xl text-sm transition-all">
+            Get Started Free
+          </a>
+        </div>
+
+        <!-- Pro (featured) -->
+        <div class="reveal border border-[#9DFF20] bg-[#9DFF20]/5 rounded-3xl p-8 relative shadow-2xl shadow-[#9DFF20]/10" id="plan-pro">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#9DFF20] text-[#0D0D0D] text-xs font-black px-4 py-1 rounded-full uppercase tracking-wider">Most Popular</div>
+          <div class="text-xs font-bold text-[#9DFF20] uppercase tracking-widest mb-4">Pro</div>
+          <div class="text-5xl font-black text-white mb-1">&#8377;999<span class="text-xl text-[#555] font-normal">/month</span></div>
+          <div class="text-[#555] text-sm mb-6">Up to 30 deliveries / month</div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-3 text-sm text-[#bbb]"><i class="fa-solid fa-check text-[#9DFF20] text-xs w-4"></i>Everything in Starter</li>
+            <li class="flex items-center gap-3 text-sm text-[#bbb]"><i class="fa-solid fa-check text-[#9DFF20] text-xs w-4"></i>Priority dispatch</li>
+            <li class="flex items-center gap-3 text-sm text-[#bbb]"><i class="fa-solid fa-check text-[#9DFF20] text-xs w-4"></i>Dedicated support line</li>
+            <li class="flex items-center gap-3 text-sm text-[#bbb]"><i class="fa-solid fa-check text-[#9DFF20] text-xs w-4"></i>Invoice &amp; billing</li>
+            <li class="flex items-center gap-3 text-sm text-[#bbb]"><i class="fa-solid fa-check text-[#9DFF20] text-xs w-4"></i>Multi-stop routing</li>
+            <li class="flex items-center gap-3 text-sm text-[#555]"><i class="fa-solid fa-xmark text-[#444] text-xs w-4"></i>Custom API</li>
+          </ul>
+          <a href="#contact" class="btn-shine block text-center bg-[#9DFF20] hover:bg-[#b5ff52] text-[#0D0D0D] font-black py-3 rounded-xl text-sm transition-all hover:scale-105">
+            Start Free Trial
+          </a>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="reveal border border-[#2a2a2a] hover:border-[#9DFF20]/40 bg-[#141414] rounded-3xl p-8 transition-all hover:shadow-lg hover:shadow-[#9DFF20]/10 hover:-translate-y-1" id="plan-enterprise">
+          <div class="text-xs font-bold text-[#555] uppercase tracking-widest mb-4">Enterprise</div>
+          <div class="text-5xl font-black text-white mb-1">Custom</div>
+          <div class="text-[#555] text-sm mb-6">Unlimited deliveries, fleet</div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-3 text-sm text-[#888]"><i class="fa-solid fa-check text-[#9DFF20] text-xs w-4"></i>Everything in Pro</li>
+            <li class="flex items-center gap-3 text-sm text-[#888]"><i class="fa-solid fa-check text-[#9DFF20] text-xs w-4"></i>Dedicated fleet</li>
+            <li class="flex items-center gap-3 text-sm text-[#888]"><i class="fa-solid fa-check text-[#9DFF20] text-xs w-4"></i>Custom API &amp; integrations</li>
+            <li class="flex items-center gap-3 text-sm text-[#888]"><i class="fa-solid fa-check text-[#9DFF20] text-xs w-4"></i>Business dashboard</li>
+            <li class="flex items-center gap-3 text-sm text-[#888]"><i class="fa-solid fa-check text-[#9DFF20] text-xs w-4"></i>SLA guarantee</li>
+            <li class="flex items-center gap-3 text-sm text-[#888]"><i class="fa-solid fa-check text-[#9DFF20] text-xs w-4"></i>Account manager</li>
+          </ul>
+          <a href="#contact" class="block text-center border border-[#9DFF20]/30 text-[#9DFF20] hover:bg-[#9DFF20]/10 font-bold py-3 rounded-xl text-sm transition-all">
+            Contact Sales
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ██████████  TESTIMONIALS  ██████████ -->
+  <section id="testimonials" class="py-24 bg-[#0A0A0A] border-t border-[#1f1f1f]">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+      <div class="text-center mb-16 reveal">
+        <div class="inline-flex items-center gap-2 tag text-xs font-bold px-4 py-2 rounded-full mb-5 tracking-widest uppercase">
+          <i class="fa-solid fa-star text-xs"></i> Reviews
+        </div>
+        <h2 class="font-display text-4xl sm:text-5xl font-black text-white mb-4">
+          What Our <span class="text-[#9DFF20]">Customers Say</span>
+        </h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <div class="reveal border border-[#1f1f1f] hover:border-[#9DFF20]/20 bg-[#141414] rounded-2xl p-6 transition-all" id="testi-1">
+          <div class="flex items-center gap-1 mb-4">
+            <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+            <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+            <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+            <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+            <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+          </div>
+          <p class="text-[#888] text-sm leading-relaxed mb-5">"Reddy delivered my contract documents across Bangalore in 35 minutes! The real-time tracking gave me total peace of mind. Will use forever."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-gradient-to-br from-[#9DFF20] to-[#345C00] flex items-center justify-center text-[#0D0D0D] font-black text-xs">MR</div>
+            <div>
+              <div class="text-white font-semibold text-sm">Meera Rao</div>
+              <div class="text-[#555] text-xs">Startup Founder, Bengaluru</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal border border-[#1f1f1f] hover:border-[#9DFF20]/20 bg-[#141414] rounded-2xl p-6 transition-all" id="testi-2">
+          <div class="flex items-center gap-1 mb-4">
+            <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+            <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+            <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+            <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+            <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+          </div>
+          <p class="text-[#888] text-sm leading-relaxed mb-5">"We switched our entire e-commerce fulfillment to Reddy. 200+ daily deliveries, zero complaints. Their business plan is unbeatable value."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center text-white font-black text-xs">KP</div>
+            <div>
+              <div class="text-white font-semibold text-sm">Kiran Patil</div>
+              <div class="text-[#555] text-xs">Operations Head, FashionHub</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal border border-[#1f1f1f] hover:border-[#9DFF20]/20 bg-[#141414] rounded-2xl p-6 transition-all" id="testi-3">
+          <div class="flex items-center gap-1 mb-4">
+            <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+            <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+            <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+            <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+            <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+          </div>
+          <p class="text-[#888] text-sm leading-relaxed mb-5">"I book grocery runs through WhatsApp every Saturday. Rider arrives in 15 minutes, everything packed perfectly. This is the future of delivery."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white font-black text-xs">SN</div>
+            <div>
+              <div class="text-white font-semibold text-sm">Sneha Naidu</div>
+              <div class="text-[#555] text-xs">Regular Customer, Hyderabad</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ██████████  CONTACT FORM  ██████████ -->
+  <section id="contact" class="py-24">
+    <div class="max-w-5xl mx-auto px-5 sm:px-8">
+      <div class="border border-[#2a2a2a] bg-[#111111] rounded-3xl overflow-hidden">
+
+        <div class="bg-[#9DFF20] px-8 sm:px-12 py-10">
+          <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-2 bg-[#0D0D0D]/15 text-[#0D0D0D] text-xs font-bold px-4 py-2 rounded-full mb-5 tracking-widest uppercase">
+              <i class="fa-solid fa-paper-plane text-xs"></i> Book Now
+            </div>
+            <h2 class="font-display text-4xl sm:text-5xl font-black text-[#0D0D0D] leading-[1.1] mb-3">
+              First Delivery Is On Us
+            </h2>
+            <p class="text-[#345C00] text-base">Fill the form and our team will call you within 15 minutes to confirm your first FREE delivery.</p>
+          </div>
+        </div>
+
+        <div class="px-8 sm:px-12 py-10">
+          <form id="reddy-form" onsubmit="handleReddyForm(event)" class="grid sm:grid-cols-2 gap-5">
+            <div class="space-y-1.5">
+              <label for="r-name" class="text-xs font-semibold text-[#666] uppercase tracking-wider">Full Name *</label>
+              <input type="text" id="r-name" name="name" required placeholder="Your name"
+                class="lime-cursor inp w-full rounded-xl px-4 py-3 text-sm" />
+            </div>
+            <div class="space-y-1.5">
+              <label for="r-phone" class="text-xs font-semibold text-[#666] uppercase tracking-wider">Phone / WhatsApp *</label>
+              <input type="tel" id="r-phone" name="phone" required placeholder="+91 98765 43210"
+                class="lime-cursor inp w-full rounded-xl px-4 py-3 text-sm" />
+            </div>
+            <div class="space-y-1.5">
+              <label for="r-city" class="text-xs font-semibold text-[#666] uppercase tracking-wider">Your City *</label>
+              <input type="text" id="r-city" name="city" required placeholder="e.g. Bengaluru"
+                class="lime-cursor inp w-full rounded-xl px-4 py-3 text-sm" />
+            </div>
+            <div class="space-y-1.5">
+              <label for="r-type" class="text-xs font-semibold text-[#666] uppercase tracking-wider">Delivery Type</label>
+              <select id="r-type" name="type" class="lime-cursor inp w-full rounded-xl px-4 py-3 text-sm cursor-pointer">
+                <option value="">Select type...</option>
+                <option value="parcel">Parcel / Courier</option>
+                <option value="food">Food Delivery</option>
+                <option value="grocery">Grocery & Essentials</option>
+                <option value="docs">Documents</option>
+                <option value="business">Business / Bulk</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2 space-y-1.5">
+              <label for="r-note" class="text-xs font-semibold text-[#666] uppercase tracking-wider">Delivery Details</label>
+              <textarea id="r-note" name="note" rows="3" placeholder="Pickup and drop-off locations, items, any special instructions..."
+                class="lime-cursor inp w-full rounded-xl px-4 py-3 text-sm resize-none"></textarea>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="flex items-start gap-3 cursor-pointer">
+                <input type="checkbox" id="r-consent" required class="mt-1 w-4 h-4 accent-[#9DFF20]" />
+                <span class="text-xs text-[#555] leading-relaxed">
+                  I agree to be contacted by Reddy regarding my delivery enquiry. I am 18+ years of age.
+                  See our <a href="#footer-disclaimer" class="text-[#9DFF20] underline">Terms &amp; Privacy Policy</a>.
+                </span>
+              </label>
+            </div>
+            <div class="sm:col-span-2">
+              <button type="submit" id="reddy-submit"
+                class="btn-shine w-full bg-[#9DFF20] hover:bg-[#b5ff52] text-[#0D0D0D] font-black py-4 rounded-2xl text-base transition-all hover:scale-[1.01] hover:shadow-xl hover:shadow-[#9DFF20]/20 flex items-center justify-center gap-3">
+                <i class="fa-solid fa-truck-fast"></i>
+                Book My FREE First Delivery
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+
+          <!-- Success state -->
+          <div id="reddy-success" class="hidden text-center py-12">
+            <div class="w-20 h-20 rounded-full bg-[#9DFF20]/10 border border-[#9DFF20]/30 flex items-center justify-center mx-auto mb-5">
+              <i class="fa-solid fa-circle-check text-[#9DFF20] text-4xl"></i>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-2">Booking Received! &#127881;</h3>
+            <p class="text-[#555] mb-6">Our team will call you back within <strong class="text-white">15 minutes</strong> to confirm your delivery. Or jump on WhatsApp now:</p>
+            <a href="https://wa.link/dljvvh"
+               target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold px-8 py-4 rounded-2xl transition-all hover:scale-105">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              Confirm on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ██████████  FOOTER + DISCLAIMER  ██████████ -->
+  <footer class="bg-[#080808] border-t border-[#1a1a1a]" id="footer-disclaimer">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
+        <div class="sm:col-span-2 lg:col-span-1">
+          <a href="#" class="inline-flex items-center gap-2 mb-5">
+            <div class="w-9 h-9 rounded-full bg-[#9DFF20] flex items-center justify-center">
+              <i class="fa-solid fa-bolt text-[#0D0D0D] text-sm"></i>
+            </div>
+            <span class="font-display font-black text-2xl tracking-tight text-white">Reddy<span class="text-[#9DFF20]">.</span></span>
+          </a>
+          <p class="text-[#444] text-sm leading-relaxed mb-5">Fast, reliable, insured delivery — across your city. Available 7 days a week.</p>
+          <div class="flex gap-3">
+            <a href="#" id="f-ig"  aria-label="Instagram" class="w-9 h-9 border border-[#2a2a2a] hover:border-[#9DFF20]/40 rounded-lg flex items-center justify-center text-[#555] hover:text-[#9DFF20] transition-all"><i class="fa-brands fa-instagram text-sm"></i></a>
+            <a href="#" id="f-fb"  aria-label="Facebook"  class="w-9 h-9 border border-[#2a2a2a] hover:border-[#9DFF20]/40 rounded-lg flex items-center justify-center text-[#555] hover:text-[#9DFF20] transition-all"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+            <a href="#" id="f-tw"  aria-label="Twitter"   class="w-9 h-9 border border-[#2a2a2a] hover:border-[#9DFF20]/40 rounded-lg flex items-center justify-center text-[#555] hover:text-[#9DFF20] transition-all"><i class="fa-brands fa-x-twitter text-sm"></i></a>
+            <a href="https://wa.link/dljvvh" target="_blank" rel="noopener" id="f-wa" aria-label="WhatsApp" class="w-9 h-9 border border-[#25D366]/30 hover:border-[#25D366] rounded-lg flex items-center justify-center text-[#25D366] hover:bg-[#25D366]/10 transition-all"><i class="fa-brands fa-whatsapp text-sm"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-5">Services</h4>
+          <ul class="space-y-2.5 text-[#444] text-sm">
+            <li><a href="#services" class="hover:text-[#9DFF20] transition-colors">Food Delivery</a></li>
+            <li><a href="#services" class="hover:text-[#9DFF20] transition-colors">Parcel &amp; Courier</a></li>
+            <li><a href="#services" class="hover:text-[#9DFF20] transition-colors">Grocery Runs</a></li>
+            <li><a href="#services" class="hover:text-[#9DFF20] transition-colors">Document Delivery</a></li>
+            <li><a href="#services" class="hover:text-[#9DFF20] transition-colors">Business Logistics</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-5">Company</h4>
+          <ul class="space-y-2.5 text-[#444] text-sm">
+            <li><a href="#" class="hover:text-[#9DFF20] transition-colors">About Reddy</a></li>
+            <li><a href="#" class="hover:text-[#9DFF20] transition-colors">Become a Rider</a></li>
+            <li><a href="#" class="hover:text-[#9DFF20] transition-colors">Partner With Us</a></li>
+            <li><a href="#" class="hover:text-[#9DFF20] transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-[#9DFF20] transition-colors">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-5">Contact</h4>
+          <ul class="space-y-3 text-[#444] text-sm">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-[#9DFF20]"></i><a href="tel:+919999999999" class="hover:text-white transition-colors">+91 99999 99999</a></li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-[#9DFF20]"></i><a href="mailto:hello@reddy.in" class="hover:text-white transition-colors">hello@reddy.in</a></li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-location-dot text-[#9DFF20] mt-0.5"></i><span>Bengaluru, Hyderabad &amp; Mumbai</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Disclaimer -->
+      <div class="border-t border-[#1a1a1a] pt-8">
+        <h5 class="text-[#444] font-semibold text-xs mb-4 flex items-center gap-2 uppercase tracking-wider">
+          <i class="fa-solid fa-triangle-exclamation text-yellow-600"></i>
+          Disclaimers &amp; Policy Notices
+        </h5>
+        <div class="space-y-3 text-[10px] leading-relaxed text-[#333]">
+          <p><strong class="text-[#444]">General:</strong> Reddy is an independent on-demand delivery platform. Delivery times stated are estimates based on average conditions and may vary due to traffic, weather, distance, and item availability. "First delivery free" offer applies to first-time customers only, subject to availability, and is limited to deliveries within a 10 km radius.</p>
+          <p><strong class="text-[#444]">Google Ads Compliance:</strong> This page may be reached via Google Ads. All claims made regarding delivery speed, pricing, and service quality reflect typical outcomes and are <strong class="text-[#3a3a3a]">not guaranteed</strong>. Performance may vary. Reddy's advertising practices comply with <a href="https://support.google.com/adspolicy/" target="_blank" rel="noopener" class="text-[#9DFF20]/60 hover:underline">Google Ads policies</a> including prohibited content, misleading representations, and editorial standards. We do not engage in deceptive claims, clickbait, or prohibited ad formats.</p>
+          <p><strong class="text-[#444]">Online Services &amp; Gaming Policy:</strong> Reddy does not operate any real-money gaming, gambling, or fantasy sports platform. Any third-party advertisements that may appear through ad networks are governed by the respective platform's policies. If you encounter gaming-related advertisements via this network: such ads are restricted to users 18 years and above; real-money gaming carries financial risk; <span class="text-yellow-700">&#9888; "This game involves an element of financial risk and may be addictive. Please play responsibly and at your own risk."</span></p>
+          <p><strong class="text-[#444]">Privacy:</strong> Personal data collected via this form (name, phone, city) is used solely to process your delivery booking enquiry. Data is not sold to third parties. To request deletion, email <a href="mailto:privacy@reddy.in" class="text-[#9DFF20]/60 hover:underline">privacy@reddy.in</a>. By submitting a form, you confirm you are 18+ years of age and consent to being contacted regarding your enquiry.</p>
+          <p class="text-[#2a2a2a] pt-2 border-t border-[#1a1a1a]">&#169; 2024 Reddy Delivery Services. All rights reserved. Registered in India. Availability subject to city coverage area.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ██████████  FLOATING WHATSAPP  ██████████ -->
+  <a href="https://wa.link/dljvvh"
+     target="_blank" rel="noopener" id="wa-float"
+     aria-label="Chat on WhatsApp"
+     class="wa-float fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-[#1ebe5d]">
+    <i class="fa-brands fa-whatsapp text-white text-3xl"></i>
+    <span class="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-30"></span>
+  </a>
+
+  <!-- ██████████  MOBILE POPUP  ██████████ -->
+  <div id="reddy-popup"
+       class="fixed inset-0 z-[100] flex items-end sm:items-center justify-center hidden"
+       style="background: rgba(0,0,0,0.88); backdrop-filter: blur(8px);"
+       role="dialog" aria-modal="true" aria-labelledby="popup-heading">
+
+    <div class="popup-slide bg-[#111111] border border-[#9DFF20]/25 rounded-t-3xl sm:rounded-3xl w-full sm:max-w-md shadow-2xl shadow-[#9DFF20]/10 relative" style="max-height:95vh; overflow-y:auto;">
+
+      <!-- Handle (mobile) -->
+      <div class="sm:hidden flex justify-center pt-3 pb-1">
+        <div class="w-10 h-1 rounded-full bg-[#2a2a2a]"></div>
+      </div>
+
+      <!-- Close -->
+      <button onclick="closeReddyPopup()" id="popup-close"
+        class="absolute top-4 right-4 z-10 w-8 h-8 border border-[#2a2a2a] hover:border-[#9DFF20]/30 rounded-full flex items-center justify-center text-[#555] hover:text-white transition-all"
+        aria-label="Close">
+        <i class="fa-solid fa-xmark text-xs"></i>
+      </button>
+
+      <!-- Header -->
+      <div class="bg-[#9DFF20] px-6 py-7 text-center">
+        <div class="text-4xl mb-2">&#128666;</div>
+        <h2 id="popup-heading" class="font-display text-xl font-black text-[#0D0D0D] mb-1">Your First Delivery Is FREE!</h2>
+        <p class="text-[#345C00] text-sm">Book now — our rider reaches you in under 20 mins</p>
+      </div>
+
+      <div class="p-6 space-y-4">
+
+        <!-- WhatsApp CTA -->
+        <a href="https://wa.link/dljvvh"
+           target="_blank" rel="noopener" id="popup-wa-btn"
+           onclick="closeReddyPopup()"
+           class="flex items-center justify-center gap-3 w-full bg-[#25D366] hover:bg-[#1ebe5d] text-white font-black py-4 rounded-2xl text-sm transition-all hover:scale-105 shadow-lg shadow-green-500/20">
+          <i class="fa-brands fa-whatsapp text-2xl"></i>
+          <div class="text-left">
+            <div class="font-black">Book via WhatsApp</div>
+            <div class="text-xs opacity-80 font-normal">Instant reply &middot; Available 24/7</div>
+          </div>
+        </a>
+
+        <div class="flex items-center gap-3">
+          <div class="flex-1 h-px bg-[#1f1f1f]"></div>
+          <span class="text-[#333] text-xs font-semibold uppercase tracking-wider">or quick form</span>
+          <div class="flex-1 h-px bg-[#1f1f1f]"></div>
+        </div>
+
+        <!-- Quick form -->
+        <form id="popup-form" onsubmit="handlePopupReddyForm(event)" class="space-y-3">
+          <input type="text" id="p-name" required placeholder="Your Name *"
+            class="lime-cursor inp w-full rounded-xl px-4 py-3 text-sm" />
+          <input type="tel" id="p-phone" required placeholder="WhatsApp Number *"
+            class="lime-cursor inp w-full rounded-xl px-4 py-3 text-sm" />
+          <select id="p-type" class="lime-cursor inp w-full rounded-xl px-4 py-3 text-sm cursor-pointer text-[#555]">
+            <option value="">What to deliver?</option>
+            <option value="parcel">Parcel</option>
+            <option value="food">Food</option>
+            <option value="grocery">Groceries</option>
+            <option value="docs">Documents</option>
+          </select>
+          <button type="submit" id="popup-submit"
+            class="btn-shine w-full bg-[#9DFF20] hover:bg-[#b5ff52] text-[#0D0D0D] font-black py-3.5 rounded-2xl text-sm transition-all hover:scale-[1.02] flex items-center justify-center gap-2">
+            <i class="fa-solid fa-truck-fast"></i> Book FREE Delivery
+          </button>
+        </form>
+
+        <!-- Popup success -->
+        <div id="popup-success" class="hidden text-center py-4">
+          <div class="text-4xl mb-3">&#9989;</div>
+          <h3 class="text-white font-black text-lg mb-1">We'll call you in 15 minutes!</h3>
+          <a href="https://wa.link/dljvvh" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 bg-[#25D366] text-white font-bold px-6 py-3 rounded-xl text-sm mt-3 transition-all hover:scale-105">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+
+        <p class="text-center text-[#2a2a2a] text-[10px]">18+ only &middot; First delivery free for new customers &middot; Results may vary &middot; Privacy protected</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ██████████  SCRIPTS  ██████████ -->
+  <script>
+    // ── Marquee duplicate ──
+    (function () {
+      const track = document.querySelector('.marquee-track');
+      const tpl   = document.getElementById('marquee-items');
+      const html  = tpl.innerHTML;
+      // inject twice
+      track.innerHTML = html + html;
+    })();
+
+    // ── Scroll reveal ──
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    // ── Navbar shadow on scroll ──
+    window.addEventListener('scroll', () => {
+      const hdr = document.getElementById('navbar');
+      hdr.style.borderBottomColor = window.scrollY > 60 ? 'rgba(157,255,32,0.12)' : 'rgba(31,31,31,1)';
+    });
+
+    // ── Popup ──
+    const reddyPopup  = document.getElementById('reddy-popup');
+    let   popupShown  = false;
+
+    function showReddyPopup () {
+      if (popupShown || sessionStorage.getItem('reddyPopupDone')) return;
+      popupShown = true;
+      reddyPopup.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeReddyPopup () {
+      reddyPopup.classList.add('hidden');
+      document.body.style.overflow = '';
+      sessionStorage.setItem('reddyPopupDone', '1');
+    }
+
+    // Trigger: mobile 5s, desktop 8s + 40% scroll
+    window.addEventListener('load', () => {
+      if (sessionStorage.getItem('reddyPopupDone')) return;
+      setTimeout(showReddyPopup, window.innerWidth < 768 ? 5000 : 8000);
+    });
+    window.addEventListener('scroll', function scTrig () {
+      const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+      if (pct >= 40) { showReddyPopup(); window.removeEventListener('scroll', scTrig); }
+    });
+    reddyPopup.addEventListener('click', e => { if (e.target === reddyPopup) closeReddyPopup(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeReddyPopup(); });
+
+    // ── Main form ──
+    function handleReddyForm (e) {
+      e.preventDefault();
+      const btn = document.getElementById('reddy-submit');
+      btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>&nbsp; Booking...';
+      btn.disabled  = true;
+      setTimeout(() => {
+        document.getElementById('reddy-form').classList.add('hidden');
+        document.getElementById('reddy-success').classList.remove('hidden');
+      }, 1400);
+    }
+
+    // ── Popup form ──
+    function handlePopupReddyForm (e) {
+      e.preventDefault();
+      const btn = document.getElementById('popup-submit');
+      btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>&nbsp; Booking...';
+      btn.disabled  = true;
+      setTimeout(() => {
+        document.getElementById('popup-form').style.display = 'none';
+        document.getElementById('popup-success').classList.remove('hidden');
+        sessionStorage.setItem('reddyPopupDone', '1');
+      }, 1200);
+    }
+  </script>
+</body>
+</html>
